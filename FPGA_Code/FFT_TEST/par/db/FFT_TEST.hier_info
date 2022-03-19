@@ -1,0 +1,5 @@
+|FFT_TEST
+sys_clk => ~NO_FANOUT~
+sys_rst => ~NO_FANOUT~
+
+

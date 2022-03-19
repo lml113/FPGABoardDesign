@@ -1,0 +1,249 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffc222416c3, pid=12036, tid=11524
+#
+# JRE version: 6.0_23-b05
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (19.0-b09 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  [ntdll.dll+0x516c3]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002484000):  JavaThread "IP Toolbench loading thread" [_thread_in_Java, id=11524, stack(0x0000000002380000,0x0000000002480000)]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0xffffffffffffffff
+
+Registers:
+RAX=0x0000000002471001, RBX=0x0000000000000002, RCX=0x0000000000000000, RDX=0x000000000247e208
+RSP=0x000000000247e198, RBP=0x000000000247e1f8, RSI=0x0000000000000000, RDI=0x0000000000000020
+R8=0x00000000003c0000, R9=0x000000000247e190, R10=0x00000000eb45be28, R11=0x000000000247e3e0
+R12=0x0000000000000023, R13=0x00007ffbe4df62c0, R14=0x00000000095b21f0, R15=0x0000000000000003
+RIP=0x00007ffc222416c3, EFLAGS=0x0000000000010202
+
+Register to memory mapping:
+
+RAX=0x0000000002471001
+0x0000000002471001 is pointing into the stack for thread: 0x0000000002484000
+"IP Toolbench loading thread" prio=6 tid=0x0000000002484000 nid=0x2d04 runnable [0x000000000247e000]
+   java.lang.Thread.State: RUNNABLE
+
+RBX=0x0000000000000002
+0x0000000000000002 is pointing to unknown location
+
+RCX=0x0000000000000000
+0x0000000000000000 is pointing to unknown location
+
+RDX=0x000000000247e208
+0x000000000247e208 is pointing into the stack for thread: 0x0000000002484000
+"IP Toolbench loading thread" prio=6 tid=0x0000000002484000 nid=0x2d04 runnable [0x000000000247e000]
+   java.lang.Thread.State: RUNNABLE
+
+RSP=0x000000000247e198
+0x000000000247e198 is pointing into the stack for thread: 0x0000000002484000
+"IP Toolbench loading thread" prio=6 tid=0x0000000002484000 nid=0x2d04 runnable [0x000000000247e000]
+   java.lang.Thread.State: RUNNABLE
+
+RBP=0x000000000247e1f8
+0x000000000247e1f8 is pointing into the stack for thread: 0x0000000002484000
+"IP Toolbench loading thread" prio=6 tid=0x0000000002484000 nid=0x2d04 runnable [0x000000000247e000]
+   java.lang.Thread.State: RUNNABLE
+
+RSI=0x0000000000000000
+0x0000000000000000 is pointing to unknown location
+
+RDI=0x0000000000000020
+0x0000000000000020 is pointing to unknown location
+
+R8 =0x00000000003c0000
+0x00000000003c0000 is pointing to unknown location
+
+R9 =0x000000000247e190
+0x000000000247e190 is pointing into the stack for thread: 0x0000000002484000
+"IP Toolbench loading thread" prio=6 tid=0x0000000002484000 nid=0x2d04 runnable [0x000000000247e000]
+   java.lang.Thread.State: RUNNABLE
+
+R10=0x00000000eb45be28
+
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xe0000000]
+
+Stack: [0x0000000002380000,0x0000000002480000],  sp=0x000000000247e198,  free space=1016k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [ntdll.dll+0x516c3]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+v  blob 0x00000000025b707f
+j  java.util.ArrayList.indexOf(Ljava/lang/Object;)I+44
+j  java.awt.Container.getComponentZOrder(Ljava/awt/Component;)I+30
+j  javax.swing.LayoutComparator.compare(Ljava/lang/Object;Ljava/lang/Object;)I+254
+j  java.util.Arrays.mergeSort([Ljava/lang/Object;[Ljava/lang/Object;IIILjava/util/Comparator;)V+43
+j  java.util.Arrays.mergeSort([Ljava/lang/Object;[Ljava/lang/Object;IIILjava/util/Comparator;)V+107
+j  java.util.Arrays.mergeSort([Ljava/lang/Object;[Ljava/lang/Object;IIILjava/util/Comparator;)V+120
+j  java.util.Arrays.sort([Ljava/lang/Object;Ljava/util/Comparator;)V+34
+j  java.util.Collections.sort(Ljava/util/List;Ljava/util/Comparator;)V+9
+j  javax.swing.SortingFocusTraversalPolicy.enumerateAndSortCycle(Ljava/awt/Container;Ljava/util/List;Ljava/util/Map;)V+165
+j  javax.swing.SortingFocusTraversalPolicy.getFirstComponent(Ljava/awt/Container;)Ljava/awt/Component;+84
+j  javax.swing.LayoutFocusTraversalPolicy.getFirstComponent(Ljava/awt/Container;)Ljava/awt/Component;+39
+j  javax.swing.SortingFocusTraversalPolicy.getDefaultComponent(Ljava/awt/Container;)Ljava/awt/Component;+2
+j  java.awt.Window.isFocusableWindow()Z+30
+j  sun.awt.windows.WWindowPeer.updateFocusableWindowState()V+8
+j  sun.awt.windows.WWindowPeer.show()V+1
+j  java.awt.Component.show()V+33
+j  java.awt.Window.show()V+57
+j  java.awt.Component.show(Z)V+5
+j  java.awt.Component.setVisible(Z)V+2
+j  java.awt.Window.setVisible(Z)V+2
+j  altera.ipbu.flowmanager.FlowManager.loadSplashScreen()V+323
+j  altera.ipbu.flowmanager.FlowManager.load()V+28
+j  altera.ipbu.flowmanager.FlowManager.initialize()V+107
+j  altera.ipbu.flowmanager.FlowManagerPlugin.plugin_initialize()V+54
+j  altera.ipbu.flowbase.plugin.BasePluginInterfaceObject.initialize()V+388
+j  altera.ipbu.flowmanager.FlowManagerMain.initialize([Ljava/lang/String;)V+26
+j  altera.ipbu.flowmanager.FlowManagerMain.iptb_main([Ljava/lang/String;Ljava/lang/Object;)Laltera/ipbu/flowmanager/FlowManagerMain;+14
+v  ~StubRoutines::call_stub
+j  sun.reflect.NativeMethodAccessorImpl.invoke0(Ljava/lang/reflect/Method;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+0
+j  sun.reflect.NativeMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+87
+j  sun.reflect.DelegatingMethodAccessorImpl.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+6
+j  java.lang.reflect.Method.invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;+161
+j  altera.ipbu.launcher.IPToolbench.<init>([Ljava/lang/String;Ljava/lang/Object;)V+327
+j  altera.ipbu.launcher.IPToolbench.main([Ljava/lang/String;)V+6
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000000009697000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=10936, stack(0x0000000010680000,0x0000000010780000)]
+  0x0000000009693800 JavaThread "Image Fetcher 0" daemon [_thread_blocked, id=10824, stack(0x0000000010580000,0x0000000010680000)]
+  0x0000000008060800 JavaThread "AWT-Windows" daemon [_thread_in_native, id=9920, stack(0x0000000008550000,0x0000000008650000)]
+  0x000000000708d800 JavaThread "AWT-Shutdown" [_thread_blocked, id=10848, stack(0x0000000008450000,0x0000000008550000)]
+  0x000000000708d000 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=11836, stack(0x0000000007e80000,0x0000000007f80000)]
+  0x0000000006ee8000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=10408, stack(0x0000000007490000,0x0000000007590000)]
+  0x0000000006ee7800 JavaThread "CompilerThread1" daemon [_thread_blocked, id=11820, stack(0x0000000007390000,0x0000000007490000)]
+  0x0000000006ee1800 JavaThread "CompilerThread0" daemon [_thread_blocked, id=1408, stack(0x0000000007290000,0x0000000007390000)]
+  0x0000000006ee1000 JavaThread "Attach Listener" daemon [_thread_blocked, id=10860, stack(0x0000000007190000,0x0000000007290000)]
+  0x0000000006ee0000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=9240, stack(0x0000000007090000,0x0000000007190000)]
+  0x0000000002579000 JavaThread "Finalizer" daemon [_thread_blocked, id=11268, stack(0x0000000006d90000,0x0000000006e90000)]
+  0x0000000002576800 JavaThread "Reference Handler" daemon [_thread_blocked, id=4532, stack(0x0000000006c90000,0x0000000006d90000)]
+=>0x0000000002484000 JavaThread "IP Toolbench loading thread" [_thread_in_Java, id=11524, stack(0x0000000002380000,0x0000000002480000)]
+
+Other Threads:
+  0x0000000002568800 VMThread [stack: 0x0000000006b90000,0x0000000006c90000] [id=5388]
+  0x0000000006f0f800 WatcherThread [stack: 0x0000000007590000,0x0000000007690000] [id=11096]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ PSYoungGen      total 19136K, used 12302K [0x00000000eaab0000, 0x00000000ec000000, 0x0000000100000000)
+  eden space 16448K, 74% used [0x00000000eaab0000,0x00000000eb6b3850,0x00000000ebac0000)
+  from space 2688K, 0% used [0x00000000ebd60000,0x00000000ebd60000,0x00000000ec000000)
+  to   space 2688K, 0% used [0x00000000ebac0000,0x00000000ebac0000,0x00000000ebd60000)
+ PSOldGen        total 43712K, used 0K [0x00000000c0000000, 0x00000000c2ab0000, 0x00000000eaab0000)
+  object space 43712K, 0% used [0x00000000c0000000,0x00000000c0000000,0x00000000c2ab0000)
+ PSPermGen       total 21248K, used 9933K [0x00000000bae00000, 0x00000000bc2c0000, 0x00000000c0000000)
+  object space 21248K, 46% used [0x00000000bae00000,0x00000000bb7b35d8,0x00000000bc2c0000)
+
+Dynamic libraries:
+0x0000000000400000 - 0x000000000042e000 	c:\altera\13.1\quartus\bin64\jre64\bin\java.exe
+0x00007ffc221f0000 - 0x00007ffc223e5000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffc20af0000 - 0x00007ffc20bae000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffc1fa70000 - 0x00007ffc1fd39000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffc1cf00000 - 0x00007ffc1cf90000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ffbe4d30000 - 0x00007ffbe51c4000 	C:\WINDOWS\SYSTEM32\AcLayers.DLL
+0x00007ffc21f20000 - 0x00007ffc21fbe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffc21a60000 - 0x00007ffc21c01000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffc201e0000 - 0x00007ffc20202000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffc21030000 - 0x00007ffc2105b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffc1f910000 - 0x00007ffc1fa1b000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffc1fe30000 - 0x00007ffc1fecd000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffc200e0000 - 0x00007ffc201e0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffc209d0000 - 0x00007ffc20a25000 	C:\WINDOWS\System32\SHLWAPI.dll
+0x00007ffc21cc0000 - 0x00007ffc21d6c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffc20a50000 - 0x00007ffc20aeb000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffc211f0000 - 0x00007ffc2131a000 	C:\WINDOWS\System32\RPCRT4.dll
+0x0000000180000000 - 0x0000000180003000 	C:\WINDOWS\SYSTEM32\sfc.dll
+0x00007ffc017c0000 - 0x00007ffc01855000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x00007ffc045e0000 - 0x00007ffc045f2000 	C:\WINDOWS\SYSTEM32\sfc_os.DLL
+0x00007ffc1afc0000 - 0x00007ffc1afd1000 	C:\WINDOWS\SYSTEM32\SortWindows61.dll
+0x00007ffc20240000 - 0x00007ffc20270000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffc1f8a0000 - 0x00007ffc1f90e000 	C:\WINDOWS\System32\dtrampo.dll
+0x000000006d7f0000 - 0x000000006dee0000 	c:\altera\13.1\quartus\bin64\jre64\bin\server\jvm.dll
+0x00007ffc16440000 - 0x00007ffc16467000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x000000006d760000 - 0x000000006d76e000 	c:\altera\13.1\quartus\bin64\jre64\bin\verify.dll
+0x000000006d3b0000 - 0x000000006d3d7000 	c:\altera\13.1\quartus\bin64\jre64\bin\java.dll
+0x000000006d310000 - 0x000000006d31a000 	c:\altera\13.1\quartus\bin64\jre64\bin\hpi.dll
+0x0000000002330000 - 0x0000000002338000 	C:\WINDOWS\System32\PSAPI.DLL
+0x000000006d7b0000 - 0x000000006d7c2000 	c:\altera\13.1\quartus\bin64\jre64\bin\zip.dll
+0x000000006d000000 - 0x000000006d1c3000 	C:\altera\13.1\quartus\bin64\jre64\bin\awt.dll
+0x00007ffc20340000 - 0x00007ffc2046a000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffc20580000 - 0x00007ffc208d5000 	C:\WINDOWS\System32\combase.dll
+0x0000000007690000 - 0x0000000007dcf000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffc07f40000 - 0x00007ffc081da000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffc1d1a0000 - 0x00007ffc1d1cf000 	C:\WINDOWS\SYSTEM32\DWMAPI.DLL
+0x00007ffc1cfb0000 - 0x00007ffc1d04e000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007ffc21fc0000 - 0x00007ffc220d5000 	C:\WINDOWS\System32\MSCTF.dll
+0x00007ffc21120000 - 0x00007ffc211ed000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffc1e150000 - 0x00007ffc1e162000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffc1fda0000 - 0x00007ffc1fe23000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffc20270000 - 0x00007ffc2031d000 	C:\WINDOWS\System32\shcore.dll
+0x000000006d2a0000 - 0x000000006d306000 	C:\altera\13.1\quartus\bin64\jre64\bin\fontmanager.dll
+0x000000006d600000 - 0x000000006d617000 	C:\altera\13.1\quartus\bin64\jre64\bin\net.dll
+0x00007ffc220e0000 - 0x00007ffc2214b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffc1ef80000 - 0x00007ffc1efea000 	C:\WINDOWS\system32\mswsock.dll
+0x000000006d620000 - 0x000000006d62b000 	C:\altera\13.1\quartus\bin64\jre64\bin\nio.dll
+0x00007ffbfd5f0000 - 0x00007ffbfd7be000 	C:\WINDOWS\SYSTEM32\d3d9.dll
+0x00007ffc1d670000 - 0x00007ffc1de00000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffc1f220000 - 0x00007ffc1f24c000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007ffc164c0000 - 0x00007ffc1669d000 	C:\WINDOWS\System32\DriverStore\FileRepository\u0347546.inf_amd64_b6147192cabe67cc\B346863\aticfx64.dll
+0x00007ffc16490000 - 0x00007ffc1649a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffbe6b30000 - 0x00007ffbe6b60000 	C:\WINDOWS\System32\DriverStore\FileRepository\u0347546.inf_amd64_b6147192cabe67cc\B346863\atiu9p64.dll
+0x00007ffbc0b70000 - 0x00007ffbc183e000 	C:\WINDOWS\System32\DriverStore\FileRepository\u0347546.inf_amd64_b6147192cabe67cc\B346863\atiumd64.dll
+0x00007ffc192f0000 - 0x00007ffc194d4000 	C:\WINDOWS\SYSTEM32\dbghelp.dll
+0x00007ffc0a4d0000 - 0x00007ffc0a4fc000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x0000000051760000 - 0x00000000524f4000 	C:\WINDOWS\System32\DriverStore\FileRepository\u0347546.inf_amd64_b6147192cabe67cc\B346863\atiumd6a.dll
+0x00007ffc1f710000 - 0x00007ffc1f75b000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffc1f6f0000 - 0x00007ffc1f702000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffc14e10000 - 0x00007ffc14e39000 	C:\WINDOWS\SYSTEM32\amdihk64.dll
+0x00007ffc16f70000 - 0x00007ffc16fab000 	C:\WINDOWS\SYSTEM32\dxcore.dll
+0x000000000f1a0000 - 0x000000000f1ee000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffbd4a50000 - 0x00007ffbd4e3f000 	C:\altera\13.1\quartus\bin64\eperl.dll
+0x00007ffc208e0000 - 0x00007ffc209ba000 	C:\WINDOWS\System32\COMDLG32.dll
+0x00007ffc111c0000 - 0x00007ffc111d8000 	C:\WINDOWS\SYSTEM32\NETAPI32.dll
+0x0000000054540000 - 0x0000000054612000 	C:\WINDOWS\SYSTEM32\MSVCR100.dll
+0x00007ffc04810000 - 0x00007ffc04909000 	C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x00007ffc1c4e0000 - 0x00007ffc1c83e000 	C:\WINDOWS\System32\CoreUIComponents.dll
+0x00007ffc1cbe0000 - 0x00007ffc1ccd2000 	C:\WINDOWS\System32\CoreMessaging.dll
+0x00007ffc1e590000 - 0x00007ffc1e5c3000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x00007ffc1b3c0000 - 0x00007ffc1b514000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+
+VM Arguments:
+jvm_args: -Xms64m -Xmx1g 
+java_command: c:/altera/13.1/ip/altera/fft/lib/../../common/ip_toolbench/v1.3.0/bin/launcher.jar -devicefamily:Cyclone IV E -projectname:FFT_TEST -projectpath:C:/Users/32852/Desktop/FPGA_code/FFT_TEST/par/ -lib_dir:c:/altera/13.1/ip/altera/fft/lib/ -flow_dir:c:/altera/13.1/ip/altera/fft/lib/../../common/ip_toolbench/v1.3.0/bin -wizard:fft C:/Users/32852/Desktop/FPGA_code/FFT_TEST/par/ipcode/FFT/fft.v -n -symbol -p2 -quartus_rootdir:c:/altera/13.1/quartus/
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=c:\altera\13.1\quartus\bin64\;c:\altera\13.1\quartus\bin64\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\MATLAB R2019a\runtime\win64;C:\MATLAB R2019a\bin;C:\MATLAB R2019a\polyspace\bin;F:\Git\cmd;F:\MATLAB R2019b\runtime\win64;F:\MATLAB R2019b\bin;F:\MATLAB R2019b\polyspace\bin;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Git\cmd;C:\Program Files\MATLAB\MATLAB Runtime\v95\runtime\win64;C:\Users\32852\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\32852\AppData\Local\Programs\Python\Python38\;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;C:\Users\32852\AppData\Local\Microsoft\WindowsApps;F:\PyCharm\PyCharm Community Edition 2020.2\bin;F:\vscode\Microsoft VS Code\bin;F:\vscode\MinGW\bin;C:\Users\32852\AppData\Local\Microsoft\WindowsApps;C:\modeltech_10.1a\win32;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.2\bin;;C:\Program Files\MySQL\MySQL Server 5.7\bin;
+USERNAME=32852
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 17 Stepping 0, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 Build 7600 
+
+CPU:total 8 (8 cores per cpu, 1 threads per core) family 23 model 17 stepping 0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, mmxext, lzcnt, sse4a
+
+Memory: 4k page, physical 7920208k(2514028k free), swap 8872748k(2710208k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (19.0-b09) for windows-amd64 JRE (1.6.0_23-b05), built on Nov 13 2010 02:43:42 by "java_re" with MS VC++ 8.0 (VS2005)
+
+time: Tue Nov 02 15:24:06 2021
+elapsed time: 1 seconds
+

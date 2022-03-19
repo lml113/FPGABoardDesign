@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Oct 02 01:42:35 2021
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : vga_rom_top
+Top-level Entity Name : vga_rom_top
+Family : Cyclone IV E
+Total logic elements : 132
+    Total combinational functions : 129
+    Dedicated logic registers : 40
+Total registers : 40
+Total pins : 30
+Total virtual pins : 0
+Total memory bits : 240,576
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

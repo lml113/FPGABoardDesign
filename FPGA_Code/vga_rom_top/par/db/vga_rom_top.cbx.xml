@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="vga_rom_top">
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_rom_top|PLL:u_PLL|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|vga_rom_top|vga_display:u_vga_display|rom:u_rom|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v6b1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
