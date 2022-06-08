@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Jun 04 06:31:55 2022
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : vga_char
+Top-level Entity Name : vga_char
+Family : Cyclone IV E
+Device : EP4CE10F17C8L
+Timing Models : Final
+Total logic elements : 194 / 10,320 ( 2 % )
+    Total combinational functions : 194 / 10,320 ( 2 % )
+    Dedicated logic registers : 32 / 10,320 ( < 1 % )
+Total registers : 32
+Total pins : 30 / 180 ( 17 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 423,936 ( 2 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

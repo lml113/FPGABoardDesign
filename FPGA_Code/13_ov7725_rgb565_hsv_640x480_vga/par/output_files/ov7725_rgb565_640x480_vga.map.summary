@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jun 02 22:43:08 2022
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : ov7725_rgb565_640x480_vga
+Top-level Entity Name : ov7725_rgb565_640x480_vga
+Family : Cyclone IV E
+Total logic elements : 2,730
+    Total combinational functions : 2,569
+    Dedicated logic registers : 473
+Total registers : 473
+Total pins : 85
+Total virtual pins : 0
+Total memory bits : 32,768
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

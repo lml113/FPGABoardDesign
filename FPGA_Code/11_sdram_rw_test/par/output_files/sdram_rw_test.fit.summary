@@ -1,0 +1,16 @@
+Fitter Status : Successful - Thu Jun 02 21:49:22 2022
+Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
+Revision Name : sdram_rw_test
+Top-level Entity Name : sdram_rw_test
+Family : Cyclone IV E
+Device : EP4CE10F17C8L
+Timing Models : Final
+Total logic elements : 2,092 / 10,320 ( 20 % )
+    Total combinational functions : 1,322 / 10,320 ( 13 % )
+    Dedicated logic registers : 1,642 / 10,320 ( 16 % )
+Total registers : 1642
+Total pins : 56 / 180 ( 31 % )
+Total virtual pins : 0
+Total memory bits : 161,792 / 423,936 ( 38 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )
